@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Website Layout | sandy</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="menu">
+            <div class="logo">
+                <a href="#">My Dear comrade</a>
+            </div>
+            <ul>
+                <li><a href="#">Love</a></li>
+                <li><a href="#">caring</a></li>
+                <li><a href="#">friendship</a></li>
+                <li><a href="#">pretty</a></li>
+                <li><a href="#">Beautiful</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="img"></div>
+    <div class="center">
+        <div class="title">Happy Birthday</div>
+        <div class="sub_title">Ms_sunshine</div>
+        <div class="simple">by</div>
+        <div class="sample">Mr_sandy</div>
+        <img src="img3.jpg" class="img3-btn" width="25%">
+        <img src="img6.png" class="img6-btn" width="10%" id="icon" onclick="playvideo('video.mp4')">
+    </div>
+    </div>
+    <div class="video-player" id="videoPlayer">
+        <video width="85%" controls autoplay autoplay id="myVideo">
+        <source src="video.mp4" type="video/mp4">
+    </video>
+
+    </div>
+    <script>
+        var videoPlayer = document.getElementById("videoPlayer")
+        var myVideo = document.getElementById("myVideo")
+
+        function playvideo(file) {
+            myVideo.src = file;
+            videoPlayer.style.display = "block";
+        }
+    </script>
+
+
+
+</body>
+
+</html>
